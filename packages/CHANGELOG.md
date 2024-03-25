@@ -1,5 +1,18 @@
 # Changelog
 
+## Version 2.0.0 (Major Updates) - [25-03-2024]
+-Features Added:
+
+--Implemented icanhazdadjoke function to retrieve jokes from the icanhazdadjoke API.
+Users can now access jokes from the icanhazdadjoke API using the icanhazdadjoke function.
+-Changes:
+
+--Removed all previous code implementations.
+--Replaced previous functionalities with the icanhazdadjoke function to streamline joke retrieval.
+
+## Version 1.0.1 (pkg fix) - [25-03-2024]
+- Changed Github Repository
+
 ## [Unreleased]
 
 ### Added

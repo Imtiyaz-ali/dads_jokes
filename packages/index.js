@@ -1,17 +1,34 @@
-var mrng= require('mrng');
+var mrng = require("mrng");
+var links = require("./assets/links");
 
-async function random_facts(){
-    var random = mrng(1,1000)
-    var komedy = ""
-    await fetch('https://api.chucknorris.io/jokes/random')
-    .then(response => response.json())
-    .then(data => {
-      komedy = data.value;
-    //   console.log(chuckNorrisJoke);
-    })
-    .catch(error => komedy="Error");
+const dads_jokes = {
 
-    return `${random}=> ${komedy}`
-}
+  // 1
+  async icanhazdadjoke() {
+    try {
+      const response = await fetch(links.icanhazdadjoke, {
+        headers: {
+          Accept: "application/json",
+        },
+      });
 
-module.exports = random_facts;
+      if (!response.ok) {
+        if (response.status === 404) {
+          throw new Error("Joke not found");
+        } else {
+          throw new Error("Network error");
+        }
+      }
+
+      const data = await response.json();
+      return data.joke;
+    } catch (error) {
+      return error.message;
+    }
+  },
+};
+
+
+
+
+module.exports = dads_jokes;

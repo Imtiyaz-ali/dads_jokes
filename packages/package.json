@@ -1,27 +1,27 @@
 {
   "name": "dads_jokes",
-  "version": "1.0.0",
-  "description": "A library to get a random fact.",
+  "version": "2.0.0",
+  "description": "dads_jokes Library is a lightweight JavaScript library designed to fetch dad jokes from open APIs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Imtiyaz-ali/random_facts_generator.git"
+    "url": "https://github.com/Imtiyaz-ali/dads_jokes.git"
   },
   "dependencies": {
     "mrng":"^1.0.6"
   },
   "keywords": [
-    "random-facts",
-    "random",
-    "facts"
+    "dads_jokes",
+    "jokes",
+    "lame_jokes"
   ],
   "author": "Imtiyaz Ali",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Imtiyaz-ali/random_facts_generator/issues"
+    "url": "https://github.com/Imtiyaz-ali/dads_jokes/issues"
   },
-  "homepage": "https://github.com/Imtiyaz-ali/random_facts_generator#readme"
+  "homepage": "https://github.com/Imtiyaz-ali/dads_jokes#readme"
 }
